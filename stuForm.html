@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form </title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+
+            background-color: rgb(188, 203, 164);
+            display: flex;
+            justify-content: center;
+
+        }
+        fieldset{
+            background-color: rgb(67, 149, 132);
+            border: 2px solid black;
+            width: 650px;
+            height: 450px;
+            margin: 30px;
+            padding: 20px;
+            display: flex;
+            justify-content:start;
+            
+        }
+        legend{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+        
+            <legend>Student Details </legend>
+            <form>
+                <label for="firstname">First name : </label>
+                <input type="text" name="firstname" id="firstname">
+                <br>
+                <br>
+                <label for="lastname">Last name : </label>
+                <input type="text" name="lastname" id="lastname">
+                <br>
+                <br>
+                <label for="number">Contact No : </label>
+                <input type="number" name="number" id="number">
+                <br>
+                <br>
+                <label for="email">Email Id : </label>
+                <input type="email" name="email" id="email">
+                <br>
+                <br>
+                <label for="dob">Date of Birth : </label>
+                <input type="date" name="dob" id="dob">
+                <br>
+                <br>
+                <label for="country">Select Your Country : </label>
+                <select name="country" id="country"> 
+                    <option value=""></option>
+                    <option value="india">India</option>
+                    <option value="ban">Bangladesh</option>
+                    <option value="china">China</option>
+                    <option value="pak">Pakistan</option>
+                </select>
+                <br>
+                <br>
+                <label> Select Your Gender : </label>
+    
+                <input type="radio" name="g" id="male">
+                <label for="male">Male </label>      
+                <input type="radio" name="g" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="g" id="other">
+                <label for="other">Others</label>
+    
+                <br>
+                <br>
+                <br>
+                <br>
+    
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+    
+            </form>
+        </fieldset>
+    </div>
+
+</body>
+</html>
